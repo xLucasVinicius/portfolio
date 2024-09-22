@@ -9,7 +9,8 @@
     --cor004: #1B3280;
     --cor005: #284CBF;
     --cor006: #00ffff;
-    --corspan:#0000ff;
+    --corspan:#00f7ff;
+    --corparag: #ada3a3;
 }
 
 * {
@@ -23,6 +24,9 @@ body {
     background-color: var(--cor001);
 }
 
+section {
+    box-shadow: 1px 1px 10px rgba(0, 255, 255, 0.589);
+}
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -32,13 +36,25 @@ body {
     display: flex;
     flex-flow: row wrap;
 }
+
+h1.titulo {
+    margin: 30px 20px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    color: aqua;
+}
 /* Fim estilo geral */
 
 /* Estilo navbar */
 
 header {
-    position: relative;
-    padding: 40px 1%;
+    z-index: 999;
+    position: fixed;
+    padding: 10px 1%;
+    background-color: #1b3380;
+    box-shadow: 1px 1px 10px #1b3380bd;
 }
 
 header > .navbar{
@@ -46,6 +62,7 @@ header > .navbar{
     align-items: center;
     justify-content: space-between;
     padding: 0px 15px;
+    width: 100vw;
 }
 
 header a#nav {
@@ -74,12 +91,13 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 34px;
 }
 
 i#menu-hb {
     font-size: 1.6rem;
     padding: 15px;
+    margin-right: 20px;
     color: white;
     border-radius: 15px;
     cursor: pointer;
@@ -89,22 +107,17 @@ i#menu-hb {
 /* Fim estilo navbar */
 
 /* Inicio estilo topo do site */
-main {
-    height: 100%;
-    border: 1px solid red;
-}
-
-
 section.topo-do-site {
-    height: 85vh;
+    height: 990px;
     padding: 40px 4%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid var(--cor006);
+    box-shadow: 1px 1px 10px rgba(0, 255, 255, 0.589);
 }
 
 section.topo-do-site .flex {
+    flex-flow: row wrap-reverse;
     gap: 80px;
     justify-content: center;
     align-items: center;
@@ -138,26 +151,20 @@ section.topo-do-site .flex {
   }
   /* Fim estilização topo do site */
 
-  /* Inicio estilização area sobre mim */
-  h1#titulo {
-    margin: 10px;
-    padding-top: 15px;
-    text-align: center;
-    font-size: 3rem;
-    color: aqua;
-}
+  /* Inicio estilização area sobre */
 
 
 div.cursos {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: start;
 }
 
 div.card-cursos {
     margin: 15px;
-    width: 215px;
-    height: 270px;
+    padding: 1%;
+    max-width: 220px;
+    height: 290px;
     display: flex;
     gap: 2px;
     flex-flow: column nowrap;
@@ -174,26 +181,26 @@ div.card-cursos {
 
 .card-cursos img {
     height: 53px;
-    width: 50px;
     padding-top: 5px;
 }
 
 .card-cursos h1 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: aqua;
 
 }
 
 .card-cursos p {
-    color: rgb(173, 163, 163);
+    font-size: 0.9rem;
+    color: var(--corparag);
     text-align: center;
 }
 
 .btn-cert {
-    width: 180px;
+    width: 190px;
     height: 30px;
     border-radius: 25px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: 2px solid #1c7ce2;
     background-color: transparent;
 }
@@ -213,23 +220,51 @@ div.card-cursos {
     color: white;
 }
 
-.sobre-mim {
+.texto-hard{
+    display: flex;
+    gap: 220px;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.texto-hard ul {
+    color: var(--corparag);
+    line-height: 50px;
+}
+
+
+/* Fim estilização area sobre */
+
+/* Inicio Estilização area sobre mim */
+.sobre-mim .interface {
+    max-width: 90vw;
+}
+.conteudo-sobre-mim{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    gap: 30px;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-sobre-mim .sticker2 img{
+    border-radius: 40px 0px;
+    background-color: var(--cor005);
 }
 
 .text-me {
-
     display: block;
-    margin: auto;
-    flex-flow: wrap;
-    width: 90%;
-    justify-content: center;
+    align-self: flex-start;
+    padding: 30px 40px;
 }
 
 .text-me p {
-    font-size: 1.3rem;
-    padding: 20px;
+    font-size: 1.1rem;
     margin: auto;
     color: rgb(173, 163, 163);
-    text-align: left;
+    text-align: justify;
 }
+/* Fim estilização sobre mim */
