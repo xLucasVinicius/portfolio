@@ -11,6 +11,7 @@
     --cor006: #00ffff;
     --corspan:#00f7ff;
     --corparag: #ada3a3;
+    --bg: 
 }
 
 * {
@@ -21,7 +22,7 @@
 }
 
 body {
-    background-color: var(--cor001);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(3,1,70,1) 100%);
 }
 
 section {
@@ -128,9 +129,10 @@ section.topo-do-site .flex {
     font-size: 42px;
     text-align: center;
     color: white;
+    text-shadow: 4px 2px 6px var(--corspan);
   }
   
-  span {color: var(--corspan)}
+  span {color: var(--corspan);}
   
   .img-perfil img {
     position: relative;
