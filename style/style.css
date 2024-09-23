@@ -10,8 +10,7 @@
     --cor005: #284CBF;
     --cor006: #00ffff;
     --corspan:#00f7ff;
-    --corparag: #ada3a3;
-    --bg: 
+    --corparag: #ada3a3; 
 }
 
 * {
@@ -22,7 +21,10 @@
 }
 
 body {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(3,1,70,1) 100%);
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(3,1,70,1) 100%); */
+    background-color: #020124;
+    background-color: #01001a;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2329314d' fill-opacity='0.19' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 section {
@@ -53,17 +55,25 @@ h1.titulo {
 header {
     z-index: 999;
     position: fixed;
-    padding: 10px 1%;
+    padding: 5px 1%;
     background-color: #1b3380;
     box-shadow: 1px 1px 10px #1b3380bd;
 }
 
 header > .navbar{
+  position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 15px;
+    padding: 0px 10px;
     width: 100vw;
+}
+
+.menu-desktop {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-right: 50px;
 }
 
 header a#nav {
@@ -75,10 +85,16 @@ header a#nav {
     transition: .2s;
 }
 
-header a#logo{
-    color: white;
-    text-decoration: none;
-    display: inline-block;
+ a#logo{
+  position: absolute;
+  top: 15px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a#logo h1 {
+  font-size: 1.6rem;
 }
 
 header a#nav:hover,  i#menu-hb:hover {
@@ -87,15 +103,17 @@ header a#nav:hover,  i#menu-hb:hover {
 }
 
 header nav ul {
+    align-items: center;
     list-style-type: none;
 }
 
 header nav ul li {
     display: inline-block;
-    padding: 0 34px;
+    padding: 0 7px;
 }
 
 i#menu-hb {
+    display: none;
     font-size: 1.6rem;
     padding: 15px;
     margin-right: 20px;
@@ -110,7 +128,7 @@ i#menu-hb {
 /* Inicio estilo topo do site */
 section.topo-do-site {
     height: 990px;
-    padding: 40px 4%;
+    padding: 40px 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,14 +137,14 @@ section.topo-do-site {
 
 section.topo-do-site .flex {
     flex-flow: row wrap-reverse;
-    gap: 80px;
+    gap: 60px;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .topo-do-site h1{
-    font-size: 42px;
+    font-size: 40px;
     text-align: center;
     color: white;
     text-shadow: 4px 2px 6px var(--corspan);
@@ -136,8 +154,8 @@ section.topo-do-site .flex {
   
   .img-perfil img {
     position: relative;
-    width: 400px;
-    margin: 1% auto ;
+    width: 25vw;
+    margin: 0 auto ;
   
     filter: drop-shadow(-1px 0px 8px var(--cor006));
   
@@ -163,6 +181,7 @@ div.cursos {
 }
 
 div.card-cursos {
+  background-color: #01001a;
     margin: 15px;
     padding: 1%;
     max-width: 220px;
@@ -173,7 +192,15 @@ div.card-cursos {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 15px;
-    box-shadow: 1px 1px 10px rgba(0, 255, 255, 0.589);
+    border: 1px solid rgba(0, 255, 255, 0.384);
+
+    transition: all .3s;
+}
+
+div.card-cursos:hover {
+  box-shadow: 1px 1px 15px rgba(0, 255, 255, 0.589);
+
+  transform: scale(1.05);
 }
 
 #primeiro-curso {
@@ -222,13 +249,20 @@ div.card-cursos {
     color: white;
 }
 
+.content-hard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .texto-hard{
     display: flex;
-    gap: 220px;
-    width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 70px;
+    padding: 0 45px;
 }
 
 .texto-hard ul {
@@ -252,7 +286,12 @@ div.card-cursos {
     align-items: center;
 }
 
+.conteudo-sobre-mim .sticker2 {
+  height: 100%;
+}
+
 .conteudo-sobre-mim .sticker2 img{
+  max-width: 450px;
     border-radius: 40px 0px;
     background-color: var(--cor005);
 }
@@ -260,13 +299,203 @@ div.card-cursos {
 .text-me {
     display: block;
     align-self: flex-start;
-    padding: 30px 40px;
+    padding: 0px 40px;
 }
 
 .text-me p {
-    font-size: 1.1rem;
+    font-size: 0.94rem;
     margin: auto;
     color: rgb(173, 163, 163);
     text-align: justify;
 }
+
+section.sobre-mim .redes-sociais {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 120px;
+  padding-left: 40px;
+}
+
+.sociais{
+  cursor: pointer;
+  transition: all .2s;
+}
+
+#insta:hover{
+  box-shadow: -1px 1px 35px rgb(255, 0, 212);
+}
+
+section.sobre-mim .sociais:hover{
+  box-shadow: -1px 1px 35px rgba(255, 255, 255, 0.589);
+  transform: translatey(-10px);
+}
+  
+.redes-sociais i {
+  font-size: 2.3rem;
+  background-color: white;
+  color: black;
+  padding: 9px 14px;
+  border-radius: 15px;
+}
 /* Fim estilização sobre mim */
+
+/* Inicio estilização contato */
+  .formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 35%;
+    margin: auto;
+  }
+  
+  .form {
+    width: 100%;
+    padding: 4%;
+  }
+  
+  form {
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form h2 {
+    color: aqua;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  
+  .input i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: rgba(255, 255, 255, 0.74);
+  }
+  
+  .mensagem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  form label{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+  
+  form input {
+    padding: 2vh;
+    outline: none;
+    border: 0;
+    margin-bottom: 1vh;
+    border-radius: 20px;
+    background-color: var(--cor005);
+    color: white;
+  }
+  
+  form input::placeholder{color: rgba(255, 255, 255, 0.74);}
+  
+  form input:focus, form textarea:focus {background-color: #153396; color: white;}
+  
+  form textarea {
+    resize: none;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    margin-bottom: 3vh;
+    background-color: var(--cor005);
+    color: white;
+  }
+  
+  form textarea::placeholder {color: rgba(255, 255, 255, 0.74);}
+  
+  .btn-enviar {
+    font-size: 1.2em;
+    padding: 5px 0;
+    border-radius: 15px;
+    margin-left: 50%;
+    cursor: pointer;
+    border: 2px solid var(--cor005);
+    color: var(--cor005);
+    background-color: transparent;
+    transform: translate(-50%);
+    transition: all .1s;
+  }
+  
+  .btn-enviar:hover {
+    background-color: var(--cor005);
+    color: white;
+  }
+
+/* Fim estilização contato */
+
+/* Inicio estilização footer */
+footer {
+  padding: 40px 2% 15px;
+}
+
+footer .flex {
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+footer .redes-sociais {
+  display: flex;
+  gap: 5px;
+}
+
+footer .sociais{
+  cursor: pointer;
+  transition: all .2s;
+}
+
+footer .sociais:hover{
+  transform: translatey(-5px);
+}
+  
+footer .redes-sociais i {
+  font-size: 1.3rem;
+  background-color: var(--cor005);
+  color: white;
+  padding: 5px 7px;
+  border-radius: 10px;
+}
+
+footer .line-footer {
+  padding: 20px 0;
+}
+
+.borda {
+  border-top: 2px solid var(--cor005);
+}
+
+footer .line-footer p i {
+  color: var(--cor006);
+  font-size: 22px;
+}
+
+footer .line-footer p a {
+  color: white;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+footer .line-footer p a:hover {
+  color: var(--corparag);
+}
+/* Fim estilização footer */

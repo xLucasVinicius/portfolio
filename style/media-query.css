@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+    .img-perfil img {
+        width: 70dvw;
+    }
+
+    div.cursos {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .img-perfil img {width: 400px;}
+}
+
+@media screen and (max-width: 1002px){
+    .menu-desktop {display: none;}
+    i#menu-hb {display: block;}
+}
+
+
+
+@media screen and (max-width: 1308px) {   
+    .conteudo-sobre-mim{
+        flex-flow: row-reverse wrap;
+    }
+    
+    section.sobre-mim .redes-sociais {
+        justify-content: center;
+    }
+    
+    .conteudo-sobre-mim .sticker2 {height: auto;}
+}
+
+@media screen and (max-width: 1400px) {
+    .interface {max-width: 90vw;}
+}
