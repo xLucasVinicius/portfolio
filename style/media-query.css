@@ -9,10 +9,12 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .img-perfil img {width: 400px;}
+    .img-perfil img {width: 300px;}
+    .topo-do-site h1 { font-size: 35px ;}
+    .topo-do-site .flex {gap: 1px;}
 }
 
-@media screen and (max-width: 1002px){
+@media screen and (max-width: 1120px){
     .menu-desktop {display: none;}
     i#menu-hb {display: block;}
 }
