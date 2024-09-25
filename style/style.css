@@ -28,11 +28,11 @@ body {
 }
 
 section {
-    box-shadow: 1px 1px 10px rgba(0, 255, 255, 0.589);
+  box-shadow: 1px 1px 10px rgba(0, 255, 255, 0.589);
 }
 .interface {
-    max-width: 1280px;
-    margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .flex {
@@ -342,105 +342,105 @@ section.sobre-mim .sociais:hover{
 /* Fim estilização sobre mim */
 
 /* Inicio estilização contato */
-  .formulario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-    width: 35%;
-    margin: auto;
-  }
-  
-  .form {
-    width: 100%;
-    padding: 4%;
-  }
-  
-  form {
-    max-width: 480px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .form h2 {
-    color: aqua;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 5%;
-  }
-  
-  .input {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-  }
-  
-  .input i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    color: rgba(255, 255, 255, 0.74);
-  }
-  
-  .mensagem {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  form label{
-    color: white;
-    font-size: 17px;
-    margin-bottom: 4px;
-  }
-  
-  form input {
-    padding: 2vh;
-    outline: none;
-    border: 0;
-    margin-bottom: 1vh;
-    border-radius: 20px;
-    background-color: var(--cor005);
-    color: white;
-  }
-  
-  form input::placeholder{color: rgba(255, 255, 255, 0.74);}
-  
-  form input:focus, form textarea:focus {background-color: #153396; color: white;}
-  
-  form textarea {
-    resize: none;
-    padding: 10px;
-    outline: none;
-    border-radius: 15px;
-    margin-bottom: 3vh;
-    background-color: var(--cor005);
-    color: white;
-  }
-  
-  form textarea::placeholder {color: rgba(255, 255, 255, 0.74);}
-  
-  .btn-enviar {
-    font-size: 1.2em;
-    padding: 5px 0;
-    border-radius: 15px;
-    margin-left: 50%;
-    cursor: pointer;
-    border: 2px solid var(--cor005);
-    color: var(--cor005);
-    background-color: transparent;
-    transform: translate(-50%);
-    transition: all .1s;
-  }
-  
-  .btn-enviar:hover {
-    background-color: var(--cor005);
-    color: white;
-  }
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 35%;
+  margin: auto;
+}
+
+.form {
+  width: 100%;
+  padding: 4%;
+}
+
+form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form h2 {
+  color: aqua;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.input i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.mensagem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form label{
+  color: white;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+form input {
+  padding: 2vh;
+  outline: none;
+  border: 0;
+  margin-bottom: 1vh;
+  border-radius: 20px;
+  background-color: var(--cor005);
+  color: white;
+}
+
+form input::placeholder{color: rgba(255, 255, 255, 0.74);}
+
+form input:focus, form textarea:focus {background-color: #153396; color: white;}
+
+form textarea {
+  resize: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 15px;
+  margin-bottom: 3vh;
+  background-color: var(--cor005);
+  color: white;
+}
+
+form textarea::placeholder {color: rgba(255, 255, 255, 0.74);}
+
+.btn-enviar {
+  font-size: 1.2em;
+  padding: 5px 0;
+  border-radius: 15px;
+  margin-left: 50%;
+  cursor: pointer;
+  border: 2px solid var(--cor005);
+  color: var(--cor005);
+  background-color: transparent;
+  transform: translate(-50%);
+  transition: all .1s;
+}
+
+.btn-enviar:hover {
+  background-color: var(--cor005);
+  color: white;
+}
 
 /* Fim estilização contato */
 
@@ -498,4 +498,16 @@ footer .line-footer p a {
 footer .line-footer p a:hover {
   color: var(--corparag);
 }
+
+a#logo-footer{
+
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a#logo-footer h1 {
+  font-size: 1.6rem;
+}
+
 /* Fim estilização footer */
