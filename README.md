@@ -1,2 +1,2 @@
 # portfolio2.0
- versão 2 do meu portfólio 
+ versão 2.0 do meu portfolio
