@@ -1,8 +1,11 @@
 @media screen and (max-width: 767px) {
+    /* Estilos topo site */
     h1.titulo {
         font-size: 2rem;
     }
+    /* fim estilos topo site */
 
+    /* estilos especialidades */
     div.cursos {
         justify-content: center;
     }
@@ -10,7 +13,9 @@
     .texto-hard ul {
         font-size: 0.8rem;
     }
+    /* fim estilos especialidades */
 
+    /* estilos sobre mim */
     .conteudo-sobre-mim .sticker2 img{
         max-width: 200px;
     }
@@ -29,16 +34,15 @@
         padding: 5px 10px;
         border-radius: 9px;
     }
+    /* fim esilos sobre mim */
 
+    /* inicio estilos footer */
     footer .flex {
         justify-content: space-evenly;
         gap: 10px;
         flex-flow: row wrap;
     }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .topo-do-site .flex {gap: 1px;}
+    /* fim estilos footer */
 }
 
 @media screen and (max-width: 1120px){
@@ -48,7 +52,8 @@
 
 
 
-@media screen and (max-width: 1308px) {   
+@media screen and (max-width: 1308px) { 
+      /* estilos sobre mim */
     .conteudo-sobre-mim{
         flex-flow: row-reverse wrap;
     }
@@ -58,7 +63,9 @@
     }
 
     .conteudo-sobre-mim .sticker2 {height: auto;}
+    /* fim estilos sobre mim */
 }
+
 
 @media screen and (max-width: 1400px) {
     .interface {max-width: 90vw;}
