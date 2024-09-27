@@ -1,16 +1,43 @@
-@media screen and (max-width: 768px) {
-    .img-perfil img {
-        width: 70dvw;
+@media screen and (max-width: 767px) {
+    h1.titulo {
+        font-size: 2rem;
     }
 
     div.cursos {
         justify-content: center;
     }
+
+    .texto-hard ul {
+        font-size: 0.8rem;
+    }
+
+    .conteudo-sobre-mim .sticker2 img{
+        max-width: 200px;
+    }
+
+    .text-me p {
+        font-size: 0.7rem;
+    }
+
+    section.sobre-mim .redes-sociais {
+        padding-left: 0px;
+        gap: 10px;
+    }
+
+    .redes-sociais i {
+        font-size: 1.8rem;
+        padding: 5px 10px;
+        border-radius: 9px;
+    }
+
+    footer .flex {
+        justify-content: space-evenly;
+        gap: 10px;
+        flex-flow: row wrap;
+    }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-    .img-perfil img {width: 300px;}
-    .topo-do-site h1 { font-size: 35px ;}
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .topo-do-site .flex {gap: 1px;}
 }
 
@@ -25,11 +52,11 @@
     .conteudo-sobre-mim{
         flex-flow: row-reverse wrap;
     }
-    
+
     section.sobre-mim .redes-sociais {
         justify-content: center;
     }
-    
+
     .conteudo-sobre-mim .sticker2 {height: auto;}
 }
 
