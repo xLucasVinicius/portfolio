@@ -3,6 +3,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const inputTheme = document.querySelector("#buttom-input");
     const buttomLanguage = document.querySelector(".language-buttom");
     const language = document.querySelector("#language");
+    const btnMenu = document.querySelector("#btn-menu");
+
+    btnMenu.addEventListener("click", function() {
+        document.querySelector("nav").classList.toggle("active");
+        if (document.querySelector("nav").classList.contains("active")) {
+            btnMenu.innerHTML = '<i class="bi bi-x"></i>';
+        } else {
+            btnMenu.innerHTML = '<i class="bi bi-list"></i>';
+        }
+    });
+
+    document.querySelector("nav").addEventListener("click", function() {
+        document.querySelector("nav").classList.remove("active");
+        btnMenu.innerHTML = '<i class="bi bi-list"></i>';
+    });
 
     inputTheme.addEventListener("change", function() {
         if (inputTheme.checked) {

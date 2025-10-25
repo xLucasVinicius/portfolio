@@ -47,13 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Dot color:', colorDot);
     console.log('Line color:', colorLine);
   });
-
-  // Ajuste do intro
-  const intro = document.getElementById('intro');
-  intro.style.marginTop = -intro.offsetHeight / 2 + 'px';
-}, false);
-
-
+});
 /* =======================
    PLUGIN PARTICLEGROUND
    ======================= */
@@ -399,4 +393,4 @@ document.addEventListener('DOMContentLoaded', function () {
     window.cancelAnimationFrame = function(id) {
       clearTimeout(id);
     };
-}());
+})();
