@@ -91,7 +91,7 @@
     }
 
     .nav nav {
-        display: block;
+        display: none;
         position: absolute;
         top: 60px;
         right: 0px;
@@ -109,6 +109,7 @@
     }
 
     .nav nav.active {
+        display: block;
         transform: translateX(0);
     }
 
